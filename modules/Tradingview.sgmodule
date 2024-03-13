@@ -1,0 +1,14 @@
+#!name=tradingview
+#!desc=tradingview
+
+[Script]
+
+# Not subscribed or trial not activated
+TradingView = type=http-response, pattern=https://vn.tradingview.com/api/v1/user/profile/me/, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/tradingview.js
+
+# Subscribed or trial activated
+TradingView = type=http-response, pattern=https://vn.tradingview.com/order/apple/receipt/, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/tradingview.js
+
+[MITM]
+
+hostname = %APPEND% vn.tradingview.com
