@@ -1,0 +1,8 @@
+#!name=GitHub 1.142.1
+#!desc=除了AI功能，其他功能都可用
+
+[MITM]
+hostname = %APPEND% api.github.com
+
+[Script]
+GitHub 1.142.1 = type=http-response, pattern=https://api.github.com/graphql, script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/Github.js, requires-body=true, max-size=-1, timeout=60
