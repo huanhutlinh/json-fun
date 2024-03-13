@@ -1,0 +1,8 @@
+#!name=Unlock MorpholioTrace
+#!desc=MorpholioTrace
+
+[MITM]
+hostname=%APPEND% www.mymorpholio.com
+
+[Script]
+MorpholioTrace = type=http-response,pattern=https://www.mymorpholio.com/api/index.php/rest_iap/receipt, requires-body=1,max-size=0, script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/morpholioTrace.js, script-update-interval=-1
