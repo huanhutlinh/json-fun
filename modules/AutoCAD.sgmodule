@@ -1,0 +1,18 @@
+#!name=AutoCAD
+#!desc=
+#!====================================
+#!⚠️【Disclaimer】
+#!------------------------------------------
+#!1. This script is intended for learning and research purposes only. Its legality, accuracy, and effectiveness are not guaranteed. Please judge for yourself according to the situation, and I do not assume any responsibility for this.
+#!2. Since this script is for learning and research purposes only, you must completely delete all content from your computer, phone, or any storage device within 24 hours of downloading. I am not responsible for any events resulting from a violation of this rule.
+#!3. Do not use this script for any commercial or illegal purposes. If you violate this rule, you are responsible for it.
+#!4. This script is unrelated to the applications it involves, and I do not assume any responsibility for any privacy leaks or other consequences caused by it.
+#!5. I am not responsible for any issues caused by the script, including but not limited to any losses and damages caused by script errors.
+#!6. If any unit or individual believes that this script may infringe on their rights, please promptly notify and provide proof of identity, ownership, and we will delete this script after receiving and confirming the authentication documents.
+#!7. All individuals who directly or indirectly use or view this script should carefully read this disclaimer. I reserve the right to change or supplement this disclaimer at any time. Once you use or copy this script, it is considered that you have accepted this disclaimer.
+
+[MITM]
+hostname = %APPEND% app.autocad360.com
+
+[Script]
+AutoCAD = type=http-response, pattern=^https:\/\/app\.autocad360\.com\/entitlements\/v2\/me\/status, script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/AutoCAD.js, requires-body=true, max-size=-1, timeout=60
