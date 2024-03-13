@@ -1,0 +1,8 @@
+#!name=Unlock Surfshark
+#!desc=Surfshark
+
+[MITM]
+hostname=%APPEND% api.surfshark.com
+
+[Script]
+Fing = type=http-response,pattern=https://api.surfshark.com/v1/payment/subscriptions/current,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/surfshark.js,script-update-interval=-1
