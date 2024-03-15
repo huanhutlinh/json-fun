@@ -18,6 +18,7 @@ const mapping = {
 	'AI%20Art%20Generator/': ['Unlimited Access'],
 	'Airmail': ['Airmail Premium'],
 	'alcohol.tracker': ['pro', 'drinklog_lifetime'],
+	'apollo': ['all', 'com.ziheng.apollo.onetime'],
 	'Alpenglow': ['newPro'],
 	'andyworks-calculator': ['patron'],
 	'Anybox': ['pro'],
