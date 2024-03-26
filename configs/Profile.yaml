@@ -1,0 +1,104 @@
+include_all_networks: true
+dns_servers:
+  - 103.151.56.2
+  - 103.151.57.2
+mitm:
+  enabled: true
+  ca_p12: egern.p12
+  ca_passphrase: egern
+  hostnames:
+    - commerce-i18n-api.faceucam.com
+    - buy.itunes.apple.com
+    - api.adapty.io
+    - api.loop-english.com
+    - api.revenuecat.com
+    - premium*.truecaller.com
+http_captures:
+  - commerce-i18n-api.faceucam.com
+  - buy.itunes.apple.com
+  - api.adapty.io
+  - api.loop-english.com
+  - api.revenuecat.com
+modules:
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/WutaCam.sgmodule
+    enabled: false
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Ulike.sgmodule
+    enabled: false
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/MIX.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Snow.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Foodie.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Picart.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Soda.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/BeautyCam.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Meitu.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/B612.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Peak.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Lemo.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/CloneAI.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Reddit.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/MorpholioTrace.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Surfshark.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Fing.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/BuyiTunes.Vip.sgmodule
+    enabled: false
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/RevenuecatFull.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Epik.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Lightroom.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Tradingview.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Remini.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Github.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/AutoCAD.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Prisma.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Endel.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Grammarly.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Craft.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Truecaller.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/YTPremium.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Chess.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Camscanner.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Camera360.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Busuu.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Boom.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/AntiAdbDetect.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Alohavpn.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Adguard.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Buy-itunes.sgmodule
+    enabled: true
+  - url: https://raw.githubusercontent.com/huanhutlinh/json-fun/main/modules/Revenuecat.sgmodule
+    enabled: false
