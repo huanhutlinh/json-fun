@@ -74,6 +74,7 @@ const mapping = {
 	'jizhi': ['jizhi_vip'],
 	'kegel': ['kegel_pro'],
 	'Ledger': ['Pro', 'com.lifetime.pro'],
+	'Loora': ['Yearly', 'yearly_119_99_no_trial'],
 	'LemonKeepAccounts/': ['vip'],
 	'Locket': ['Gold'],
 	'LUTCamera': ['ProVersion', 'com.uzero.funforcam.monthlysub'],
