@@ -1,0 +1,36 @@
+#!name=Unlock PHOTO AND VIDEO APPS
+#!desc=PHOTO AND VIDEO
+
+[MITM]
+hostname = %APPEND% user-b612-api.snow.me, *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com, api.meiyan.com, api.picsart.com, *-api.snow.me, cdn-bm.camera360.com,  photos.adobe.io, *.oracle.bendingspoonsapps.com, api.neuralprisma.com
+
+[Script]
+B612 = type=http-response, pattern=https://user-b612-api.snow.me/v1/purchase/subscription/subscriber/status, requires-body=1, max-size=0,script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/b612.js, script-update-interval=-1
+
+Meitu = type=http-response, pattern=^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home), requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/meitu.js, script-update-interval=-1
+
+BeautyCam = type=http-response, pattern=https:\/\/api\.meiyan\.com\/vip\/user_info\.json\?.+, requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/beautycam.js, script-update-interval=-1
+
+Picart = type=http-response, pattern=https://api.picsart.com/gw-v2/shop/subscription/apple/purchases, requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/picart.js, script-update-interval=-1
+
+Foodie = type=http-response, pattern=https://purchase-foodie-api.snow.me/v1/purchase/subscription/subscriber/status, requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/foodie.js, script-update-interval=-1
+
+Snow = type=http-response, pattern=https://user-snow-api.snow.me/v1/purchase/subscription/subscriber/status, requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/snow.js, script-update-interval=-1
+
+Soda = type=http-response, pattern=https://purchase-soda-api.snow.me/v1/purchase/subscription/subscriber/status, requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/soda.js, script-update-interval=-1
+
+MIX = type=http-response, pattern=https://cdn-bm.camera360.com/api/iap/check-receipt, requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/MIX.js, script-update-interval=-1
+
+MIX-recovery = type=http-response, pattern=https://cdn-bm.camera360.com/api/mix/recovery, requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/MIX-recovery.js, script-update-interval=-1
+
+Lightroom = type=http-response,pattern=^https:\/\/photos\.adobe\.io\/v\d\/accounts,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/lightroom.js, script-update-interval=-1
+
+Epik = type=http-response,pattern=https://purchase-epik-api.snow.me/v1/purchase/subscription/subscriber/status, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/epik.js, script-update-interval=-1
+
+Remini = type=http-response, pattern=^https?:\/\/.*\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/.+|purchases\/verify), script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/remini.js, requires-body=true, max-size=-1, timeout=60
+
+Prisma=type=http-response,pattern=^https?:\/\/api\.neuralprisma\.com\/receipt\/ios\/status\/prisma\/[^\/]+$, requires-body=1,script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/prisma.js
+
+Prisma-reciept = type=http-response,pattern=api.neuralprisma.com/receipt/ios/upload?, requires-body=1,script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/prisma.js
+
+Camera360 = type=http-response,pattern=^https:\/\/cdn-bm\.camera360\.com\/api\/iap\/check-receipt,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/camera360.js, script-update-interval=0

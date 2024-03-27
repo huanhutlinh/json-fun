@@ -1,0 +1,8 @@
+#!name=Unlock Meitu
+#!desc=Meitu
+
+[MITM]
+hostname = %APPEND% *.xiuxiu.meitu.com, api.posters.meitu.com, api-sub.meitu.com
+
+[Script]
+Meitu = type=http-response, pattern=^https?:\/\/((h5|api)\.xiuxiu|api-sub|api\.posters)\.meitu\.com\/.+\/(vip|user|h\d|center|home), requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/meitu.js, script-update-interval=-1

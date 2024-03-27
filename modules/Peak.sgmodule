@@ -1,0 +1,8 @@
+#!name=Unclock Peak
+#!desc=Peak
+
+[MITM]
+hostname = %APPEND% billing.peakcloud.org
+
+[Script]
+Peak = type=http-response,pattern=^https:\/\/billing\.peakcloud\.org\/billing\/2\/transaction\/itunes$,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/peak.js, script-update-interval=-1

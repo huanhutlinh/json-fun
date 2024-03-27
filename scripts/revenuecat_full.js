@@ -68,6 +68,7 @@ const mapping = {
 	'intervalFlow': ['All Access', 'wodtimer_lf_free'],
 	'IPTVUltra': ['premium'],
 	'IQtest': ['remove_ads', 'com.kechko.iqtest.premium.yearly.599'],
+	'Infltr': ['com.Yooshr.infltr.subscriptionPremium', 'com.Yooshr.infltr.everythingForever'],
 	'iRead': ['vip'],
 	'jinduoduo_calculator': ['jinduoduoapp', 'mobile_vip'],
 	'jizhi': ['jizhi_vip'],

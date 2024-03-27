@@ -1,0 +1,8 @@
+#!name=Unlock Picart
+#!desc=Picart
+
+[MITM]
+hostname = %APPEND% api.picsart.com
+
+[Script]
+Picart = type=http-response, pattern=https://api.picsart.com/gw-v2/shop/subscription/apple/purchases, requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/picart.js, script-update-interval=-1

@@ -1,0 +1,8 @@
+#!name=Unlock Soda
+#!desc=Soda
+
+[MITM]
+hostname = %APPEND% purchase-soda-api.snow.me
+
+[Script]
+Soda = type=http-response, pattern=https://purchase-soda-api.snow.me/v1/purchase/subscription/subscriber/status, requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/soda.js, script-update-interval=-1

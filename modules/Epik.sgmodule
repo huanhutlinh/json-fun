@@ -1,0 +1,8 @@
+#!name=Unlock Epik
+#!desc=Epik
+
+[MITM]
+hostname=%APPEND% purchase-epik-api.snow.me
+
+[Script]
+Epik = type=http-response,pattern=https://purchase-epik-api.snow.me/v1/purchase/subscription/subscriber/status,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/epik.js,script-update-interval=-1

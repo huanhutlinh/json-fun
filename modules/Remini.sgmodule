@@ -1,0 +1,8 @@
+#!name=Remini
+#!desc=无
+
+[MITM]
+hostname = %APPEND% *.oracle.bendingspoonsapps.com
+
+[Script]
+Remini = type=http-response, pattern=^https?:\/\/.*\.oracle\.bendingspoonsapps\.com\/v\d\/(users\/.+|purchases\/verify), script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/remini.js, requires-body=true, max-size=-1, timeout=60
