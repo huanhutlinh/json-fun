@@ -112,6 +112,7 @@ const mapping = {
 	'Reels%20Editor': ['Unlimited Access'],
 	'ScannerPro': ['plus'],
 	'ScientificCalculator': ['premium', 'com.simpleinnovation.calculator.ai.premium.yearly.base'],
+	'Speak': ['premium', 'lifetime_membership'],
 	'server_bee': ['Pro'],
 	'ShellBean/': ['pro', 'com.ningle.shellbean.subscription.year'],
 	'simple-': ['patron'],
