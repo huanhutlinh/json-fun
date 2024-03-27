@@ -102,6 +102,7 @@ const mapping = {
 	'Percento': ['premium'],
 	'Period%20Calendar': ['Premium', 'com.lbrc.PeriodCalendar.premium.yearly'],
 	'Photom': ['premium', 'pixelmator_photo_pro_subscription_v1_pro_offer'],
+	'Praktika': ['Premium User', 'ai.praktika.premium.lifetime_99.99'],
 	'PhotoRoom': ['business'],
 	'Pillow': ['premium'],
 	'PinPaper': ['allaccess'],
