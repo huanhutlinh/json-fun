@@ -15,6 +15,7 @@ const mapping = {
 	'%E8%AC%8E%E5%BA%95%E9%BB%91%E8%86%A0': ['Entitlement.Pro'],
 	'%E8%BD%A6%E7%A5%A8%E7%A5%A8': ['vip+watch_vip'],
 	'1Blocker': ['premium'],
+	'4Ask': ['premium', 'com.4ask.yearly'],
 	'AI%20Art%20Generator/': ['Unlimited Access'],
 	'Airmail': ['Airmail Premium'],
 	'alcohol.tracker': ['pro', 'drinklog_lifetime'],
