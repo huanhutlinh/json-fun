@@ -1,0 +1,8 @@
+#!name=Unlock CAKE
+#!desc=CAKE
+
+[MITM]
+hostname = %APPEND% api.cakeapp.me
+
+[Script]
+CAKE = type=http-response, pattern=https://api.cakeapp.me/gw/subscription, requires-body=1, max-size=0,script-path=https://raw.githubusercontent.com/huanhutlinh/json-fun/main/scripts/cake.js, script-update-interval=-1
